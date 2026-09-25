@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michaela Klimova</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #c8c8c8;
+      background: #161618;
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 5rem;
+    }
+
+    /* ── Header ── */
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #f0f0f0;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.15rem;
+    }
+
+    .subtitle {
+      color: #888;
+      font-size: 0.92rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact {
+      font-size: 0.82rem;
+      color: #606060;
+    }
+
+    .contact a {
+      color: #606060;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .contact a i {
+      font-size: 1.05rem;
+      vertical-align: -1px;
+    }
+
+    .contact a:hover {
+      color: #a0a0a0;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      margin-bottom: 2.8rem;
+    }
+
+    .photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #2a2a2c;
+      flex-shrink: 0;
+    }
+
+    /* ── Bio ── */
+    .bio {
+      margin-bottom: 2.8rem;
+    }
+
+    .bio p {
+      margin-bottom: 0.8rem;
+    }
+
+    /* ── Section headings ── */
+    h2 {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 1.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #2a2a2c;
+    }
+
+    /* ── Publications ── */
+    .pub-list {
+      list-style: none;
+      margin-bottom: 2.8rem;
+    }
+
+    .pub-list li {
+      margin-bottom: 1.2rem;
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+
+    .pub-list .title {
+      color: #d8d8d8;
+    }
+
+    .pub-list .authors {
+      color: #888;
+    }
+
+    .pub-list .author-me {
+      color: #c8c8c8;
+    }
+
+    .pub-list .venue {
+      font-style: italic;
+      color: #777;
+    }
+
+    .pub-list .links {
+      margin-top: 0.2rem;
+    }
+
+    .pub-list .links a {
+      font-size: 0.78rem;
+      color: #7aadcf;
+      text-decoration: none;
+      margin-right: 0.8em;
+      transition: color 0.15s;
+    }
+
+    .pub-list .links a:hover {
+      color: #a8ccdf;
+    }
+
+    .pub-list .in-prep {
+      color: #555;
+      font-style: italic;
+    }
+
+    /* ── CV link ── */
+    .cv-link {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: #c8c8c8;
+      text-decoration: none;
+      border: 1px solid #333;
+      padding: 0.5em 1.1em;
+      border-radius: 3px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .cv-link:hover {
+      border-color: #666;
+      color: #f0f0f0;
+    }
+
+    /* ── General links ── */
+    a {
+      color: #7aadcf;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      color: #a8ccdf;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      body { font-size: 15px; }
+      .page { padding: 2.5rem 1.2rem 3rem; }
+      h1 { font-size: 1.4rem; }
+      .photo { width: 80px; height: 80px; }
+      .header { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="header">
+      <img class="photo" src="HeadshotLabpage.jpeg" alt="Michaela Klimova">
+      <div>
+        <h1>Michaela Klimova</h1>
+        <p class="subtitle">Postdoctoral Research Associate, Duke University</p>
+        <p class="contact">
+          <a href="mailto:michaela.klimova@duke.edu">michaela.klimova@duke.edu</a>
+          &ensp;
+          <a href="https://scholar.google.com/citations?hl=en&user=1rHJVngAAAAJ&view_op=list_works&sortby=pubdate" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+          &ensp;
+          <a href="https://www.linkedin.com/in/michaelaklimova/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="bio">
+      <p>
+        I study how neural gain control mechanisms shape the intensity and character
+        of visual experience. Gain control — the brain's ongoing regulation of neural
+        signal strength — is one of the most fundamental operations in sensory
+        processing, implemented through divisive normalization. My work examines
+        how these mechanisms operate in early visual cortex, how they adapt under
+        altered conditions like dim lighting and sleep, and how they relate to
+        subjective aspects of experience, including mental imagery vividness and
+        visual discomfort.
+      </p>
+      <p>
+        I use functional MRI, computational modeling, psychophysics, and
+        eye-tracking to approach these questions. I did my PhD at Boston University
+        with Sam Ling, followed by postdoctoral work with MiYoung Kwon at
+        Northeastern and my current position in the Subjectivity Lab with Jorge
+        Morales at Duke.
+      </p>
+    </div>
+
+    <h2>Publications</h2>
+    <ul class="pub-list">
+      <li>
+        <span class="title">Cortex-specific inversion of visual responses during sleep.</span><br>
+        <span class="authors">Cicero, N. G., <span class="author-me">Klimova, M.</span>, Vinke, L., Ling, S., &amp; Lewis, L. D. (2026).</span>
+        <span class="venue">Nature Communications</span>, 17, 7403.
+        <div class="links"><a href="papers/cicero-2026-natcomm.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">Spatial frequency tuning follows scale invariance in the human visual cortex.</span><br>
+        <span class="authors">Wiecek, E., Ramirez, L. D., <span class="author-me">Klimova, M.</span>, &amp; Ling, S. (2026).</span>
+        <span class="venue">Journal of Neuroscience</span>, 46(4).
+        <div class="links"><a href="papers/wiecek-2026-jneurosci.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">Impact of rod-dominant mesopic conditions on spatial summation and surround suppression in early visual cortex.</span><br>
+        <span class="authors"><span class="author-me">Klimova, M.</span>, &amp; Kwon, M. (2025).</span>
+        <span class="venue">Journal of Neuroscience</span>, 45(21).
+        <div class="links"><a href="https://www.jneurosci.org/content/45/21/e1649242025.abstract">link</a></div>
+      </li>
+      <li>
+        <span class="title">How does orientation-tuned normalization spread across the visual field?</span><br>
+        <span class="authors"><span class="author-me">Klimova, M.</span>, Bloem, I. M., &amp; Ling, S. (2025).</span>
+        <span class="venue">Journal of Neurophysiology</span>, 133(2), 539–546.
+        <div class="links"><a href="papers/klimova-bloem-ling-2025-jneurophysiol.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">The effects of emotional arousal on pupil size depend on luminance.</span><br>
+        <span class="authors">Pan, J., Sun, X., Park, E., Kaufmann, M., <span class="author-me">Klimova, M.</span>, McGuire, J. T., &amp; Ling, S. (2024).</span>
+        <span class="venue">Scientific Reports</span>, 14(1), 21895.
+        <div class="links"><a href="papers/pan-2024-scireports.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">Differential cortical and subcortical visual processing with eyes shut.</span><br>
+        <span class="authors">Cicero, N. G., <span class="author-me">Klimova, M.</span>, Lewis, L. D., &amp; Ling, S. (2024).</span>
+        <span class="venue">Journal of Neurophysiology</span>, 132(1), 54–60.
+        <div class="links"><a href="papers/cicero-2024-jneurophysiol.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">Attention preserves the selectivity of feature-tuned normalization.</span><br>
+        <span class="authors"><span class="author-me">Klimova, M.</span>, Bloem, I. M., &amp; Ling, S. (2023).</span>
+        <span class="venue">Journal of Neurophysiology</span>, 130(4), 990–998.
+        <div class="links"><a href="papers/klimova-bloem-ling-2023-jneurophysiol.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">Davida reorients intermediate visual processing.</span><br>
+        <span class="authors">Ling, S., &amp; <span class="author-me">Klimova, M.</span> (2022).</span>
+        <span class="venue">Cognitive Neuropsychology</span>, 39(1–2), 88–91.
+        <div class="links"><a href="papers/ling-klimova-2022-cogneuropsych.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">Arousal-based pupil modulation is dictated by luminance.</span><br>
+        <span class="authors">Pan, J., <span class="author-me">Klimova, M.</span>, McGuire, J. T., &amp; Ling, S. (2022).</span>
+        <span class="venue">Scientific Reports</span>, 12(1), 1390.
+        <div class="links"><a href="papers/pan-2022-scireports.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">The specificity of orientation-tuned normalization within human early visual cortex.</span><br>
+        <span class="authors"><span class="author-me">Klimova, M.</span>, Bloem, I. M., &amp; Ling, S. (2021).</span>
+        <span class="venue">Journal of Neurophysiology</span>, 126(5), 1536–1546.
+        <div class="links"><a href="papers/klimova-bloem-ling-2021-jneurophysiol.pdf">pdf</a></div>
+      </li>
+      <li>
+        <span class="title">Grouping by feature of cross-modal flankers in temporal ventriloquism.</span><br>
+        <span class="authors"><span class="author-me">Klimova, M.</span>, Nishida, S. Y., &amp; Roseboom, W. (2017).</span>
+        <span class="venue">Scientific Reports</span>, 7(1), 7615.
+        <div class="links"><a href="papers/klimova-nishida-roseboom-2017-scireports.pdf">pdf</a></div>
+      </li>
+      <li class="in-prep">
+        Penaloza, B., <span class="author-me">Klimova, M.</span>, &amp; Kwon, M. (in prep).
+        How dim light, crowding, and aging jointly constrain functional field of view.
+      </li>
+    </ul>
+
+    <h2>CV</h2>
+    <p style="margin-bottom: 2.8rem;">
+      <a class="cv-link" href="Klimova_CV_Aug2026.pdf" download>Download CV (PDF)</a>
+    </p>
+
+  </div>
+</body>
+</html>
